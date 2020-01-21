@@ -1,14 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
 * {
     margin: 0;
 }
 
 body {
-    background-color: blanchedalmond;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .flag img {
-    max-width: 150px;
-    display: inline-block;
+    width: 350px;
+    height: 200px;
 }
 
-.country-buttons button {}
+.flag-container {
+    margin-top: 15px;
+}
+
+.name-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.playBtn {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 32px;
+    text-shadow: 0px 1px 0px #3d768a;
+    margin-top: 10px;
+}
+
+.country-name-button {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    text-shadow: 0px 1px 0px #3d768a;
+}
+
+.countryBtn button {
+    margin-top: 10px;
+}
