@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Play&display=swap");
 * {
     margin: 0;
 }
@@ -7,16 +7,16 @@ body {
     background: linear-gradient(to right, #c9d6ff, #e2e2e2);
 }
 
+.country-flag-game {
+    display: grid;
+    grid-template-columns: 750px 1fr;
+}
+
 .game {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.flag img {
-    width: 350px;
-    height: 200px;
 }
 
 .flag-container {
@@ -43,6 +43,11 @@ body {
     margin-top: 10px;
 }
 
+.flag img {
+    width: 350px;
+    height: 200px;
+}
+
 .country-name-button {
     box-shadow: 0px 10px 14px -7px #276873;
     background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
@@ -51,7 +56,7 @@ body {
     cursor: pointer;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     padding: 8px 12px;
     text-shadow: 0px 1px 0px #3d768a;
