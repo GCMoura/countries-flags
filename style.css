@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Play&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 * {
     margin: 0;
 }
 
 body {
     background: linear-gradient(to right, #c9d6ff, #e2e2e2);
-}
-
-.country-flag-game {
     display: grid;
     grid-template-columns: 750px 1fr;
 }
@@ -28,15 +26,19 @@ body {
     margin-bottom: 10px;
 }
 
-.playBtn {
+.name-container p {
+    cursor: default;
+}
+
+.button {
     box-shadow: 0px 10px 14px -7px #276873;
     background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
     background-color: #599bb3;
     border-radius: 8px;
     cursor: pointer;
     color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-family: "Play", sans-serif;
+    font-size: 28px;
     font-weight: bold;
     padding: 8px 32px;
     text-shadow: 0px 1px 0px #3d768a;
@@ -55,8 +57,8 @@ body {
     border-radius: 8px;
     cursor: pointer;
     color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-family: "Play", sans-serif;
+    font-size: 20px;
     font-weight: bold;
     padding: 8px 12px;
     text-shadow: 0px 1px 0px #3d768a;
@@ -64,4 +66,45 @@ body {
 
 .countryBtn button {
     margin-top: 10px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.level {
+    font-family: "Play", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.score {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: default;
+    width: 370px;
+}
+
+.score div {
+    cursor: default;
+}
+
+.scoreInput {
+    height: 20px;
+    width: 50px;
+}
+
+.end-game {
+    color: #ed213a;
+    font-size: 72px;
+    font-family: "Permanent Marker", cursive;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

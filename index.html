@@ -10,24 +10,45 @@
 </head>
 
 <body>
-    <div class="country-flag-game">
-        <div class="game">
-            <div class="flag-container"></div>
-            <div class="name-container"></div>
-            <button class="playBtn">Play</button>
+    <div class="game">
+        <div class="flag-container"></div>
+        <div class="name-container"></div>
+        <div class="button-container">
+            <button class="button playBtn">Play</button>
         </div>
+    </div>
 
-        <div class="result">
-            <div class="level">Choose the level</div>
-            <div class="hits">hits</div>
-            <div class="errors">errors</div>
-            <div class="points">points</div>
-            <div class="rules">rules</div>
+    <div class="result">
+        <p class="level">
+            Choose the level
+        </p>
+        <p>
+            <button class="easy button " value="0">Easy</button>
+            <button class="medium button " value="1">Medium</button>
+            <button class="hard button" value="2">Hard</button>
+        </p>
+
+        <div class="score button">
+            <div class=" button">
+                Hit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="scoreInput hits"> </span>
+            </div>
+            <div class=" button">
+                Error &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="scoreInput errors"> </span>
+            </div>
+
+            <div class="button">
+                Points &nbsp;&nbsp;
+                <span class="scoreInput points"> </span>
+            </div>
+        </div>
+        <div class="rules">
+            <button class="rules-button button">Rules</button>
         </div>
     </div>
 
     <script src="game.js"></script>
-    <script src="result.js"></script>
 </body>
 
 </html>
