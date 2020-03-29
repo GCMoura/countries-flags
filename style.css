@@ -2,12 +2,28 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
+.container {
     background: linear-gradient(to right, #c9d6ff, #e2e2e2);
     display: grid;
     grid-template-columns: 750px 1fr;
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    background-color: #276873;
+    height: 80px;
+    color: #ffffff;
+    font-family: "Play", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 .game {
@@ -15,34 +31,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.flag-container {
-    margin-top: 15px;
+    margin-top: -100px;
 }
 
 .name-container {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.name-container p {
-    cursor: default;
-}
-
-.button {
-    box-shadow: 0px 10px 14px -7px #276873;
-    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-    background-color: #599bb3;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: "Play", sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 8px 32px;
-    text-shadow: 0px 1px 0px #3d768a;
-    margin-top: 10px;
 }
 
 .flag img {
@@ -53,15 +47,20 @@ body {
 .country-name-button {
     box-shadow: 0px 10px 14px -7px #276873;
     background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-    background-color: #599bb3;
     border-radius: 8px;
     cursor: pointer;
     color: #ffffff;
     font-family: "Play", sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     padding: 8px 12px;
     text-shadow: 0px 1px 0px #3d768a;
+    outline: none;
+}
+
+.country-name-button:hover,
+.country-name-button:active {
+    outline: none;
 }
 
 .countryBtn button {
@@ -73,28 +72,50 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.level {
-    font-family: "Play", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
+    margin-top: -100px;
 }
 
 .score {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    cursor: default;
-    width: 370px;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: "Play", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 8px 32px;
+    text-shadow: 0px 1px 0px #3d768a;
+    margin-top: 20px;
+    outline: none;
 }
 
-.score div {
-    cursor: default;
+.playBtn,
+.playBtn:hover,
+.playBtn:active {
+    outline: none;
+}
+
+.score-container {
+    width: 400px;
 }
 
 .scoreInput {
     height: 20px;
     width: 50px;
+    margin-left: 50px;
+    padding: 0px 20px;
+    border-radius: 8px;
+}
+
+.attCount {
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: "Play", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0px 20px;
+    border: transparent;
 }
 
 .end-game {
@@ -103,8 +124,48 @@ body {
     font-family: "Permanent Marker", cursive;
 }
 
-.rules {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+    .header {
+        height: 60px;
+        font-size: 32px;
+    }
+    .score-container {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        margin-top: 30px;
+    }
+    .score {
+        font-size: 20px;
+        margin-top: 5px;
+        padding: 3px 40px;
+    }
+    .game {
+        height: 95vh;
+    }
+    .attCount {
+        font-size: 20px;
+    }
+    .country-name-button {
+        font-size: 20px;
+    }
+    .name-container {
+        margin-top: 5px;
+    }
+    .flag img {
+        margin-top: 15px;
+        width: 200px;
+        height: 120px;
+    }
+    .min-score {
+        width: 350px;
+    }
+    .new-game {
+        font-size: 24px;
+    }
 }
