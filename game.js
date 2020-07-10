@@ -17,6 +17,9 @@ var value = 0;
 var countries = '';
 var numberFlag = '';
 
+const hitSound = new Audio('./sounds/hit.mp3')
+const errorSound = new Audio('./sounds/error.mp3')
+const gameOverSound = new Audio('./sounds/gameOver.wav')
 
 getCountries(countries);
 
@@ -29,7 +32,6 @@ async function getCountries() {
 }
 
 function getGameDisplay(countries) {
-
 
     var sortNumber = [];
     flagContainer.innerHTML = "";
@@ -81,7 +83,6 @@ function getGameDisplay(countries) {
 
 }
 
-
 function validationGame(countries, numberFlag) {
 
     const countryButtons = document.querySelectorAll(".country-name-button");
@@ -89,6 +90,7 @@ function validationGame(countries, numberFlag) {
     countryButtons.forEach(btn => {
         btn.addEventListener("click", () => {
             if (btn.innerText === countries[numberFlag].name) {
+                hitSound.play()
                 btn.style.color = "green";
                 btn.disabled = true;
                 hitAttempt();
@@ -113,11 +115,14 @@ function hitAttempt() {
 
 function error(errorCount) {
     if (errorCount === 1) {
+        errorSound.play()
         document.querySelector('.first').style.background = '#ed213a'
     } else if (errorCount === 2) {
+        errorSound.play()
         document.querySelector('.second').style.background = '#ed213a'
     } else if (errorCount === 3) {
         document.querySelector('.third').style.background = '#ed213a'
+        gameOverSound.play()
         gameOver()
     }
 }
