@@ -1,11 +1,11 @@
 # Country Flag Game
 
 ## Using:
-..* HTML
-..* CSS
-..* JavaScript
+  * HTML
+  * CSS
+  * JavaScript
 
 ## API
-..* https://restcountries.eu/rest/v2/all
+  * https://restcountries.eu/rest/v2/all
 
  
