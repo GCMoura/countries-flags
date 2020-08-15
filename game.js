@@ -28,7 +28,6 @@ async function getCountries() {
     countries = await res.json();
 
     playBtn.addEventListener("click", function() { getGameDisplay(countries), false })
-
 }
 
 function getGameDisplay(countries) {
