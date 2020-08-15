@@ -14,8 +14,7 @@ This application aims to teach the flag of the countries through a fun game.
   - [License](#license)
 
 ## Screenshots (mobile layout)
-![Screenshot-1](https://raw.githubusercontent.com/GCMoura/Rijksmuseum/master/screenshots/screenshot-1.png)
-![Screenshot-2](https://raw.githubusercontent.com/GCMoura/Rijksmuseum/master/screenshots/screenshot-2.png)
+![Mobile](https://raw.githubusercontent.com/GCMoura/countries-flags/master/screenshot/mobile.png)
 
 ## Getting Started
 This page was created using only Vanilla Javascript, without frameworks or libraries, therefore for play this game access:
@@ -25,7 +24,6 @@ This page was created using only Vanilla Javascript, without frameworks or libra
 ## How it works
 
 In this game, you will have to choose the correct name of the country based on the flag appearing on the screen. If hitting, you win 100 points, but there are only three chances to error.
-
 
 ## API
 This application uses APIs available in 
@@ -46,3 +44,5 @@ If you would like to contribute, please fork the repository and use a feature br
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
  
+---
+Made with :heart: by Gabriel Moura.
